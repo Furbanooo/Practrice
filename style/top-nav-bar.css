@@ -1,0 +1,208 @@
+
+
+
+.top-nav-bar{
+  background-color: #ffffff;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  padding: 10px 25px 10px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.left-session{
+  width: 164px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.hemberger-menu{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.logo{
+  width: 120px;
+  height: 56px;
+}
+
+.middle-session{
+  max-width: 728px;
+  height: 40px;
+  flex: 1;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 70px;
+  margin-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.search{
+  border: solid  #afafaf9c;
+  border-width: 1px;
+  border-radius: 50px 0 0 50px;
+  border-right: none;
+  justify-content: center;
+  display: flex;
+  justify-content:start;
+  align-items: center;
+  flex: 1;
+  box-shadow: inset 0p 1px 2px;
+  width: 0;
+  min-width: 70px;
+}
+
+input{
+  flex: 1;
+  border: none;
+  margin-left: 20px;
+}
+
+input::placeholder{
+  flex: 1;
+  font-family: roboto;
+  font-size: 18px;
+}
+
+input:focus{
+outline: none;
+}
+
+.srch-sign{
+  width: 70px;
+  height: 40px;
+  background-color: rgb(245, 245, 245);
+  border: solid #afafaf9c;
+  border-width: 1px;
+  border-left: none;
+  border-radius: 0 50px 50px 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.srch-sign ,
+.voice-search,
+.live{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.srch-sign .tools-tip, 
+.voice-search .tools-tip,
+.live .tools-tip,
+.notification-icon .tools-tip{
+  position: absolute;
+  background-color: rgba(163, 162, 162, 0.897);
+  color: #ffffff;
+  padding: 4px 8px 4px 8px;
+  border-radius: 8px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: 300ms;
+  pointer-events: none;
+  white-space: nowrap;
+}
+
+.srch-sign:hover .tools-tip, 
+.voice-search:hover .tools-tip,
+.live:hover .tools-tip,
+.notification-icon:hover .tools-tip{
+  opacity: 1;
+}
+
+.the-signe{
+  width: 35px;
+  height: 80%;
+  margin-top: 3px;
+}
+
+.voice-search{
+  background-color: rgb(245, 245, 245);
+  width: 40px;
+  height: 100%;
+  padding: 0;
+  border: 1px solid black;
+  border: 1px;
+  border-radius: 30px;
+}
+
+.the-micro{
+  width: 30px;
+  height: 80%;
+}
+
+.right-session{
+  width: 156px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; 
+}
+
+.live{
+background-color: transparent;
+width: 40px;
+height: 40px;
+border: none;
+border-radius: 20px;
+}
+        
+        
+.notification-icon{
+background-color: transparent;
+width: 40px;
+height: 40px;
+border: none;
+border-radius: 20px;
+position: relative; 
+}
+        
+
+.profil-pic{
+width: 40px;
+height: 40px;
+padding: 0;
+border: none;
+background-color: transparent;
+}
+
+.pic{
+width: 100%;
+height: 100%;
+border-radius: 20px;
+}
+        
+.notif-count{
+background-color: rgb(230, 20, 20);
+color: white;
+padding: 2px;
+border: 2px solid #ffffff;
+border-radius: 22px;
+position: absolute;
+top: 1px;
+right: -3px;       
+}
+
+.voice-search:hover,
+.live:hover,
+.notification-icon:hover,
+.profil-pic,
+.hemberger-menu,
+.logo{
+  cursor: pointer;
+}

@@ -1,0 +1,42 @@
+.side-nav-bar{
+  background-color: white;
+  position: fixed;
+  top: 60px;
+  bottom: 0;
+  left: 0;
+  width: 72px;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  align-items: center;
+  z-index: 10;
+}
+
+.side-nav-bar .side-icon{
+  width: 64px;
+  height: 74px;
+  margin-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: 300ms;
+  cursor: pointer;
+}
+ 
+.side-icon:hover{
+  background-color: lightgray;
+  border-radius: 10px;
+ }
+
+.icon-link{
+  width: 24px;
+  height: 24px;
+  margin-bottom: 5px;
+}
+
+.icon-title{
+  font-family: roboto, arial;
+  font-size: 12px;
+}
+

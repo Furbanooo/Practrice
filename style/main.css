@@ -1,0 +1,104 @@
+body{
+  padding-top: 60px;
+  padding-left: 92px;
+  background-color: rgb(245, 245, 245);
+}
+
+.vid-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+@media (max-width: 1030px) {
+  .vid-grid{
+    grid-template-columns: 1fr 1fr;
+  }
+
+  body{
+    padding-left: 100px;
+    padding-right: 20px;
+  }
+}
+
+@media(max-width: 720px){
+  .vid-grid{
+    grid-template-columns: 1fr;
+  }
+
+  body{
+    padding-left: 100px;
+    padding-right: 30px;
+  }
+}
+
+.vid-preview{
+  width: auto;
+  height: auto;
+  margin-bottom: 25px;
+}
+
+.thumbnail{
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.vid-image{
+  width: 100%;
+  border-radius: 15px;
+} 
+
+.vid-info{
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  gap: 20px;
+  width: 100%;
+}
+
+.account-avatar{
+  width: 100%;
+  height: 40px;
+  border-radius: 20px;
+}
+
+.vid-details{
+  display: flex;
+  flex-direction: column;
+}
+
+.vid-title{
+  font-family: roboto, Arial;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 17px;
+}
+
+.author{
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  
+}
+
+.acount-name{
+  color: #302e2e;
+  margin: 5px 0 5px 0;
+}
+
+.vid-insight{
+  margin: 0;
+  font-size: 12px;
+  color: #302e2e;
+}
+
+.timer{
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 5px;
+  right: 3px;
+  border-radius: 5px;
+  padding: 0 2px 0 2px;
+  right: 8px;
+  bottom: 13px;
+}
